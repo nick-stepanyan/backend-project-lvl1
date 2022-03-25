@@ -2,7 +2,7 @@
 import answer, { askName } from '../src/cli-even.js';
 
 console.log('Welcome to the Brain Games!');
-const name = askName();
+export const name = askName();
 console.log(`Hello, ${name}!`);
 
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
