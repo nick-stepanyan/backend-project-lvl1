@@ -5,7 +5,7 @@ export const askName = () => readlineSync.question('May I have your name?: ');
 export default () => {
   // const name = askName();
   let lap = 3; // number of rounds
-  let result = '';
+  let result = `Congratulations, ${name}!`;
   while (lap > 0) {
     const number = Math.floor(Math.random() * (100)); // number generating
     console.log(number);
