@@ -1,10 +1,7 @@
 #!/usr/bin/env node
-import answer, { askName } from '../src/cli-even.js';
+import answer from '../src/cli-even.js';
+import { greeting } from '../src/cli.js';
 
-console.log('Welcome to the Brain Games!');
-export const name = askName();
-console.log(`Hello, ${name}!`);
-
+greeting();
 console.log('Answer "yes" if the number is even, otherwise answer "no".');
-const answ = answer();
-console.log(answ);
+console.log(answer());
