@@ -1,7 +1,8 @@
 #!/usr/bin/env node
-import answer from '../src/cli-even.js';
-import { greeting } from '../src/cli.js';
+import { greeting, sayRules, resultComplain } from '../src/index.js';
+import arr from '../src/cli-even.js';
 
 greeting();
-console.log('Answer "yes" if the number is even, otherwise answer "no".');
-console.log(answer());
+const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
+sayRules(rule);
+resultComplain(arr);
