@@ -20,7 +20,7 @@ export const sayRules = (rule) => console.log(rule);
 export const resultComplain = (x) => {
   let i = 0;
   while (i < rounds) {
-    console.log(car(x[i]));
+    console.log(`Question: ${car(x[i])}`);
     const answer = readlineSync.question('Your answer: ');
     const rightAnswer = cdr(x[i]);
     i += 1;
