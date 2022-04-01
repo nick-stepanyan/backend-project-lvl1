@@ -1,4 +1,7 @@
 import readlineSync from 'readline-sync';
+import {
+  car, cdr,
+} from '@hexlet/pairs';
 
 const rounds = 3; // rounds count
 
@@ -17,9 +20,9 @@ export const sayRules = (rule) => console.log(rule);
 export const resultComplain = (x) => {
   let i = 0;
   while (i < rounds) {
-    console.log(x[i][0]);
+    console.log(car(x[i]));
     const answer = readlineSync.question('Your answer: ');
-    const rightAnswer = x[i][1];
+    const rightAnswer = cdr(x[i]);
     i += 1;
     if (answer === rightAnswer) {
       console.log('Correct!');
